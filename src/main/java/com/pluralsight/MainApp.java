@@ -44,6 +44,10 @@ public class MainApp {
                 "Toyota Camry",
                 2022,
                 50000));
+        myAssets.add(new Cash(
+                "Emergency Cash",
+                "2024-01-01",
+                5000));
 
         // Loop through assets
         for (Asset asset : myAssets) {
