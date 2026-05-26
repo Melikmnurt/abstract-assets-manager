@@ -1,7 +1,7 @@
 package com.pluralsight;
 
-// Parent class for all assets
-public class Asset {
+// Abstract parent class for all assets
+public abstract class Asset {
 
     // Description of the asset
     private String description;
@@ -19,38 +19,31 @@ public class Asset {
         this.originalCost = originalCost;
     }
 
-    // Getter for description
+    // Getters and setters
     public String getDescription() {
         return description;
     }
 
-    // Setter for description
     public void setDescription(String description) {
         this.description = description;
     }
 
-    // Getter for date acquired
     public String getDateAcquired() {
         return dateAcquired;
     }
 
-    // Setter for date acquired
     public void setDateAcquired(String dateAcquired) {
         this.dateAcquired = dateAcquired;
     }
 
-    // Getter for original cost
     public double getOriginalCost() {
         return originalCost;
     }
 
-    // Setter for original cost
     public void setOriginalCost(double originalCost) {
         this.originalCost = originalCost;
     }
 
-    // Returns the current value of the asset
-    public double getValue() {
-        return originalCost;
-    }
+    // Abstract method
+    public abstract double getValue();
 }
